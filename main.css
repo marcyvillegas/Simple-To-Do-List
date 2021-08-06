@@ -1,0 +1,20 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.formTask
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+
+#taskName
+{
+    margin: 0 10px 0 10px;
+}
+
