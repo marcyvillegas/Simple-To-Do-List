@@ -5,6 +5,13 @@
     box-sizing: border-box;
 }
 
+.toDoInput
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #taskName
 {
     margin: 0 10px 0 10px;
