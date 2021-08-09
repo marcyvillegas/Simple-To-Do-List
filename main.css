@@ -17,3 +17,19 @@
     margin: 0 10px 0 10px;
 }
 
+.taskBox
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.taskContainer li
+{
+    list-style-type: none;
+}
+
+.delButton
+{
+
+}
