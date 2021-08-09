@@ -24,12 +24,13 @@
     justify-content: center;
 }
 
-.taskContainer li
+#newTask
 {
     list-style-type: none;
+    padding: 10px 5px 10px 5px;
 }
 
 .delButton
 {
-
+    margin-left: 50px;
 }

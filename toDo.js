@@ -9,15 +9,19 @@ button.addEventListener("click", function(e){
     //Cancel the default action
     e.preventDefault();
     let newTask = document.createElement('li');
+    newTask.setAttribute("id","newTask")
     let deleteButton = document.createElement('button');
+    deleteButton.classList.add("delButton");
     newTask.innerText = taskValue.value;
     deleteButton.innerText = "X";
-    deleteButton.classList.add();
     newTask.appendChild(deleteButton);
     container.appendChild(taskList);
     taskList.appendChild(newTask);
     taskValue.value = "";
 
-
+    deleteButton.addEventListener("click", function(){
+        taskList.removeChild(newTask);
+    });
 });
+
 
