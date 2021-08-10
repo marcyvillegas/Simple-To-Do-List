@@ -5,32 +5,81 @@
     box-sizing: border-box;
 }
 
-.toDoInput
+body
+{
+    background: #56CCF2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2F80ED, #56CCF2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2F80ED, #56CCF2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* Header Title */
+#todo-title
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 100px 0 30px 0;
+}
+
+/* Input field container*/
+.todo-input
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+/* Input field */
+#task-name
+{
+    margin: 0 10px 0 0;
+}
+
+/* ul div container */
+.task-box
 {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#taskName
-{
-    margin: 0 10px 0 10px;
-}
-
-.taskBox
-{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#newTask
+/* ul list */
+.new-task-container
 {
     list-style-type: none;
-    padding: 10px 5px 10px 5px;
+    min-width: 30%;
 }
 
-.delButton
+/* li div container */
+.new-task-container
 {
-    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    margin-bottom: 2px;
+}
+
+.new-task-container li
+{
+    flex: 1;
+}
+
+/* li list */
+.new-task
+{
+    
+}
+
+/* Check buutton */
+.check-button
+{
+
+}
+
+/* Delete button */
+.del-button
+{
+    
 }
