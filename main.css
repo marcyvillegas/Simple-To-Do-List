@@ -18,7 +18,11 @@ body
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 100px 0 30px 0;
+    margin: 100px 0 20px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    color: whitesmoke;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
 }
 
 /* Input field container*/
@@ -27,13 +31,42 @@ body
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 /* Input field */
 #task-name
 {
     margin: 0 10px 0 0;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    width: 350px;
+    padding: 0.5em;
+    border-style: solid;
+    border: none;
+    border-radius: 5px;
+    background-color: whitesmoke;
+}
+
+/* Add new task button */
+#submit-button
+{
+    font-weight: bolder;
+    font-size: 15px;
+    width: 30px;
+    padding: 0.5em;
+    cursor: pointer;
+    border-style: solid;
+    border: none;
+    border-radius: 5px;
+    background-color: #e9a955;
+    color: whitesmoke;
+}
+
+.fa-plus
+{
+    color: whitesmoke;
 }
 
 /* ul div container */
@@ -48,7 +81,6 @@ body
 .new-task-container
 {
     list-style-type: none;
-    min-width: 30%;
 }
 
 /* li div container */
@@ -57,8 +89,10 @@ body
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: white;
+    background-color: whitesmoke;
     margin-bottom: 2px;
+    width: 550px;
+    padding: 0.5em;
 }
 
 .new-task-container li
@@ -69,17 +103,21 @@ body
 /* li list */
 .new-task
 {
-    
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
 }
 
 /* Check buutton */
 .check-button
 {
-
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
 }
 
 /* Delete button */
 .del-button
 {
-    
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+    margin-left: 5px;
 }

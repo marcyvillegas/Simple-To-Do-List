@@ -44,6 +44,7 @@ button.addEventListener("click", function (e) {
         newTaskContainer.removeChild(newTask);
         newTaskContainer.removeChild(checkButton);
         newTaskContainer.removeChild(deleteButton);
+        taskList.removeChild(newTaskContainer);
     });
 });
 
