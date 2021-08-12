@@ -32,6 +32,8 @@ body
     align-items: center;
     justify-content: center;
     margin-bottom: 30px;
+    -webkit-animation: none;
+    animation: none;
 }
 
 /* Input field */
@@ -47,6 +49,7 @@ body
     border: none;
     border-radius: 5px;
     background-color: whitesmoke;
+    outline: none;
 }
 
 /* Add new task button */
@@ -61,9 +64,9 @@ body
     border: none;
     border-radius: 5px;
     background-color: #e9a955;
-    color: whitesmoke;
 }
 
+/* Add icon */
 .fa-plus
 {
     color: whitesmoke;
@@ -89,10 +92,11 @@ body
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: whitesmoke;
+    background-color:whitesmoke;
     margin-bottom: 2px;
     width: 550px;
     padding: 0.5em;
+    border-radius: 5px;
 }
 
 .new-task-container li
@@ -105,19 +109,35 @@ body
 {
     font-family: 'Work Sans', sans-serif;
     font-weight: bold;
+    font-size: 15px;
 }
 
 /* Check buutton */
 .check-button
 {
-    font-family: 'Work Sans', sans-serif;
-    font-weight: bold;
+    background-color: yellowgreen;
+    padding: 0.7em;
+    border-style: solid;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 /* Delete button */
 .del-button
 {
-    font-family: 'Work Sans', sans-serif;
-    font-weight: bold;
+    background-color: tomato;
+    padding: 0.7em;
     margin-left: 5px;
+    border-style: solid;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Check and trash icon */
+.fa-check, .fa-trash-alt
+{
+    color: whitesmoke;
+    font-size: 15px;
 }
