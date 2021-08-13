@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+html
+{
+    font-size: 62.5%;
+}
+
 body
 {
     background: #56CCF2;  /* fallback for old browsers */
@@ -18,9 +23,9 @@ body
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 100px 0 20px 0;
+    margin: 2em 0 0.3em 0;
     font-family: 'Montserrat', sans-serif;
-    font-size: 50px;
+    font-size: 5rem;
     color: whitesmoke;
     text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
 }
@@ -31,7 +36,7 @@ body
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 30px;
+    margin-bottom: 2em;
 }
 
 /* Error animation */
@@ -51,11 +56,11 @@ body
 /* Input field */
 #task-name
 {
-    margin: 0 10px 0 0;
+    margin-right: 0.5em;
     font-family: 'Work Sans', sans-serif;
     font-weight: bold;
-    font-size: 15px;
-    width: 350px;
+    font-size: 1.5rem;
+    width: 37ch;
     padding: 0.5em;
     border-style: solid;
     border: none;
@@ -68,8 +73,8 @@ body
 #submit-button
 {
     font-weight: bolder;
-    font-size: 15px;
-    width: 30px;
+    font-size: 1.5em;
+    width: 2em;
     padding: 0.5em;
     cursor: pointer;
     border-style: solid;
@@ -105,8 +110,8 @@ body
     align-items: center;
     justify-content: space-between;
     background-color:whitesmoke;
-    margin-bottom: 2px;
-    width: 30em;
+    margin-bottom: 0.2em;
+    width: 90ch;
     padding: 0.5em;
     border-radius: 5px;
     animation: none;
@@ -154,7 +159,7 @@ body
     flex: 1;
     font-family: 'Work Sans', sans-serif;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 1.5rem;
 }
 
 /* Check buutton */
@@ -173,7 +178,7 @@ body
 {
     background-color: tomato;
     padding: 0.7em;
-    margin-left: 5px;
+    margin-left: 0.3em;
     border-style: solid;
     border: none;
     border-radius: 5px;
@@ -184,7 +189,7 @@ body
 .fa-check, .fa-trash-alt
 {
     color: whitesmoke;
-    font-size: 15px;
+    font-size: 1.5rem;
 }
 
 /* Snack Bar */
@@ -194,14 +199,13 @@ body
     position: fixed;
     bottom: 50px;
     left: 50%;
-    width: 17em;
-    height: 3em;
+    width: 18em;
     margin-left: -120px;
-    padding: 16px;
+    padding: 1em;
     background-color: rgb(105, 100, 100);
     text-align: center;
     font-family: 'Work Sans', sans-serif;
-    font-size: 15px;
+    font-size: 1.5rem;
     font-weight: bold;
     color: whitesmoke;
     border-radius: 5px;

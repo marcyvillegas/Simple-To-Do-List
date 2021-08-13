@@ -65,10 +65,10 @@ button.addEventListener("click", function (e) {
                 taskList.removeChild(newTaskContainer);
                 newTaskContainer.style.animation = "none";
             }, 200);
-            
+
             snackBar.innerHTML = "<p>You have completed your task.</p>";
             snackBar.style.display = "block";
-            setTimeout(function (){
+            setTimeout(function () {
                 snackBar.style.display = "none";
             }, 3000);
         });
@@ -83,10 +83,10 @@ button.addEventListener("click", function (e) {
                 taskList.removeChild(newTaskContainer);
                 newTaskContainer.style.animation = "none";
             }, 200);
-            
+
             snackBar.innerHTML = "<p>Your task has been deleted.</p>";
             snackBar.style.display = "block";
-            setTimeout(function (){
+            setTimeout(function () {
                 snackBar.style.display = "none";
             }, 3000);
 
