@@ -20,41 +20,41 @@ button.addEventListener("click", function (e) {
     newTask.classList.add("new-task");
     newTask.innerText = taskValue.value;
 
-    /*
-    if (taskValue.value.trim() == ''){
-        inputContainer.style.WebkitAnimation = "shake .5s";
-        inputContainer.style.animation = "shake .5s";
-     }
-    */
 
-    //Create check button 
-    let checkButton = document.createElement("button");
-    checkButton.classList.add("check-button");
-    checkButton.innerHTML = '<i class="fas fa-check"></i>';
+    if (taskValue.value.trim() == '') {
+        inputContainer.setAttribute("id", "error")
+        setTimeout(function () {
+            inputContainer.removeAttribute("id");
+        }, 3000);
+    } else {
 
-    //Create delete button 
-    let deleteButton = document.createElement("button");
-    deleteButton.classList.add("del-button");
-    deleteButton.innerHTML = '<i class="far fa-trash-alt"></i>';
+        //Create check button 
+        let checkButton = document.createElement("button");
+        checkButton.classList.add("check-button");
+        checkButton.innerHTML = '<i class="fas fa-check"></i>';
 
-    //Insert elements to ul and div container for ul
-    newTaskContainer.appendChild(newTask);
-    newTaskContainer.appendChild(checkButton);
-    newTaskContainer.appendChild(deleteButton);
-    taskList.appendChild(newTaskContainer);
-    wholeContainer.appendChild(taskList);
+        //Create delete button 
+        let deleteButton = document.createElement("button");
+        deleteButton.classList.add("del-button");
+        deleteButton.innerHTML = '<i class="far fa-trash-alt"></i>';
 
-    //Empty input value
-    taskValue.value = "";
+        //Insert elements to ul and div container for ul
+        newTaskContainer.appendChild(newTask);
+        newTaskContainer.appendChild(checkButton);
+        newTaskContainer.appendChild(deleteButton);
+        taskList.appendChild(newTaskContainer);
+        wholeContainer.appendChild(taskList);
 
-    //Function when delete button is clicked
-    deleteButton.addEventListener("click", function () {
-        newTaskContainer.removeChild(newTask);
-        newTaskContainer.removeChild(checkButton);
-        newTaskContainer.removeChild(deleteButton);
-        taskList.removeChild(newTaskContainer);
-    });
+        //Empty input value
+        taskValue.value = "";
 
+        //Function when delete button is clicked
+        deleteButton.addEventListener("click", function () {
+            newTaskContainer.removeChild(newTask);
+            newTaskContainer.removeChild(checkButton);
+            newTaskContainer.removeChild(deleteButton);
+            taskList.removeChild(newTaskContainer);
+        });
+    }
 });
-
 
