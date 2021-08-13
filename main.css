@@ -34,6 +34,7 @@ body
     margin-bottom: 30px;
 }
 
+/* Error animation */
 #error
 {
   animation: shake 0.2s ease-in-out 0s 2;
@@ -41,8 +42,8 @@ body
 
 @keyframes shake {
     0% { margin-left: 0rem; }
-    25% { margin-left: 0.5rem; }
-    75% { margin-left: -0.5rem; }
+    25% { margin-left: 1rem; }
+    75% { margin-left: -1rem; }
     100% { margin-left: 0rem; }
 }
 
@@ -105,19 +106,52 @@ body
     justify-content: space-between;
     background-color:whitesmoke;
     margin-bottom: 2px;
-    width: 550px;
+    width: 30em;
     padding: 0.5em;
     border-radius: 5px;
+    animation: none;
 }
 
-.new-task-container li
-{
-    flex: 1;
+/* Animations in adding task */
+@keyframes fadeIn{
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
 }
+
+@keyframes fadeOut{
+    0% {
+        display: block;
+        opacity: 1;
+    }
+
+    1% {
+        display: none;
+        opacity: 1;
+    }
+
+    100% {
+        display: none;
+        opacity: 0;
+    }
+}
+
 
 /* li list */
 .new-task
 {
+    flex: 1;
     font-family: 'Work Sans', sans-serif;
     font-weight: bold;
     font-size: 15px;
@@ -151,4 +185,35 @@ body
 {
     color: whitesmoke;
     font-size: 15px;
+}
+
+/* Snack Bar */
+.snack-bar
+{
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    left: 50%;
+    width: 17em;
+    height: 3em;
+    margin-left: -120px;
+    padding: 16px;
+    background-color: rgb(105, 100, 100);
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: whitesmoke;
+    border-radius: 5px;
+    animation: snackUp 0.5s, snackDown 0.5s 2.5s ease;
+}
+
+@keyframes snackUp {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 50px; opacity: 1;}
+}
+
+@keyframes snackDown {
+    from {bottom: 50px; opacity: 1;}
+    to {bottom: 0px; opacity: 0;}
 }
