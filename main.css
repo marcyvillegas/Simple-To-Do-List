@@ -200,7 +200,7 @@ body
     bottom: 50px;
     left: 50%;
     width: 18em;
-    margin-left: -120px;
+    margin-left: -130px;
     padding: 1em;
     background-color: rgb(105, 100, 100);
     text-align: center;
@@ -212,6 +212,7 @@ body
     animation: snackUp 0.5s, snackDown 0.5s 2.5s ease;
 }
 
+/* Snack Bar animations */
 @keyframes snackUp {
     from {bottom: 0; opacity: 0;}
     to {bottom: 50px; opacity: 1;}
@@ -220,4 +221,30 @@ body
 @keyframes snackDown {
     from {bottom: 50px; opacity: 1;}
     to {bottom: 0px; opacity: 0;}
+}
+
+/* Media Queries */
+@media only screen and (max-width: 420px){
+    #todo-title
+    {
+        font-size: 3.5rem;
+        margin: 3em 0 0.3em 0;
+    }
+
+    .todo-input
+    {
+        padding: 0 1.5em 0 1.5em;
+    }
+
+    @keyframes shake {
+        0% { margin-left: 0rem; }
+        25% { margin-left: 0.3rem; }
+        75% { margin-left: -0.3rem; }
+        100% { margin-left: 0rem; }
+    }
+
+    .new-task-container
+    {
+        width: 67ch;
+    }
 }
