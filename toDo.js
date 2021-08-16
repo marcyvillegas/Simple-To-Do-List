@@ -5,6 +5,7 @@ let taskValue = document.querySelector("#task-name"); //Input field
 let wholeContainer = document.querySelector(".task-box"); //Container of ul
 let taskList = document.querySelector(".task-container"); //Unordered list of the tasks
 let snackBar = document.querySelector(".snack-bar"); //Snack Bar for delete and check button
+var localStorage = window.localStorage; //Local storage
 
 //Function when button is clicked
 button.addEventListener("click", function (e) {
@@ -35,6 +36,19 @@ button.addEventListener("click", function (e) {
         }, 2500);
     } else {
 
+    // PLAN: to create local storage
+    // create array to store to dos
+    // push to array
+    // use json stringyfy
+    // print array[i]
+    // function of check and del to the array[i] 
+        /*
+        let arrayTasks = [];
+        arrayTasks.push();
+        */
+       
+        localStorage.setItem("tasks", taskValue.value);
+
         //Create check button 
         let checkButton = document.createElement("button");
         checkButton.classList.add("check-button");
@@ -57,6 +71,8 @@ button.addEventListener("click", function (e) {
 
         //Function when check button is clicked
         checkButton.addEventListener("click", function () {
+
+            //Animation
             newTaskContainer.style.animation = "fadeOut 0.3s ease";
             setTimeout(function () {
                 newTaskContainer.removeChild(newTask);
@@ -71,10 +87,13 @@ button.addEventListener("click", function (e) {
             setTimeout(function () {
                 snackBar.style.display = "none";
             }, 3000);
+        
         });
 
         //Function when delete button is clicked
         deleteButton.addEventListener("click", function () {
+
+            //Animation
             newTaskContainer.style.animation = "fadeOut 0.3s ease";
             setTimeout(function () {
                 newTaskContainer.removeChild(newTask);
