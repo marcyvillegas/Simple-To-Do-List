@@ -9,4 +9,5 @@ Simple To Do List using HTML, CSS and Javascript.
 
 
 **Mobile phone view:**
+![Screenshot_20210816-134742_Brave](https://user-images.githubusercontent.com/58241136/129517189-164135af-2d8e-44c3-9214-504a1e25e056.jpg)
 
