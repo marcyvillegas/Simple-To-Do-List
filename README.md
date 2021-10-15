@@ -1,4 +1,4 @@
-# Simple-To-Do-List
+# Simple-To-Do-List 📝
 ✅ Simple To Do List using HTML, CSS and Javascript.
 
 👉 **Live site:** https://the-simple-to-do-list.netlify.app/ 👈
